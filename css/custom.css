@@ -1,0 +1,46 @@
+div#outer {
+	color: purple;
+}
+
+div#outer >  h2, div#outer > p {
+	color: red;
+}
+
+/* wszystkie p po h2 na tym samym poziomie dokumentu  h2 ~ p */
+div#outer > h2 ~ p {
+	color:yellow;
+}
+
+
+div#outer > h2 + p {
+	color: black; 
+}
+
+/*
+div#outer > p:nth-child(3), div#inner > p:nth-child(2) {
+	color:orange;
+}*/
+
+div#outer > p:nth-child(3), div#inner > p:last-child {
+	color:orange;
+}
+
+div#outer > p:not(.first) {
+	color: blue;
+}
+a.btn {
+	text-decoration:none;
+	border:1px solid black;
+	padding:10px 20px;
+	color:black;
+}
+
+a.btn-lg {
+	padding:20px 40px; 
+	font-size:1.5em;
+}
+
+a.btn-alert {
+	color:red;
+	border:1px solid red;
+}
